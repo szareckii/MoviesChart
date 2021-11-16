@@ -39,8 +39,6 @@ class MovieFragment : MvpAppCompatFragment(), MovieView, BackButtonListener {
         }
     }
 
-//    private var adapter: RepositoryRvAdapter? = null
-
     private var _binding: FragmentMovieBinding? = null
 
     override fun onCreateView

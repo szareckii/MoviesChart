@@ -4,7 +4,6 @@ import com.szareckii.movieschart.mvp.model.entity.Results
 import com.szareckii.movieschart.mvp.model.repo.IGithubRepositoriesRepo
 import com.szareckii.movieschart.mvp.presenter.list.IRepositoryListPresenter
 import com.szareckii.movieschart.mvp.view.MovieView
-import com.szareckii.movieschart.mvp.view.listUsers.RepositoryItemView
 import io.reactivex.rxjava3.core.Scheduler
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import moxy.MvpPresenter
@@ -17,6 +16,7 @@ class MoviePresenter(private val movie: Results): MvpPresenter<MovieView>() {
     @Inject lateinit var router: Router
     @Inject lateinit var uiScheduler: Scheduler
 
+/*
     class RepositoryListPresenter: IRepositoryListPresenter {
         override var itemClickListener: ((RepositoryItemView) -> Unit)? = null
 
@@ -29,8 +29,10 @@ class MoviePresenter(private val movie: Results): MvpPresenter<MovieView>() {
 
         override fun getCount() = repositories.size
     }
+*/
 
-    val repositoryListPresenter = RepositoryListPresenter()
+//    val repositoryListPresenter = RepositoryListPresenter()
+
     private val compositeDisposable = CompositeDisposable()
 
     override fun onFirstViewAttach() {

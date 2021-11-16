@@ -13,8 +13,4 @@ class Screens {
     class DetailsScreen(private val movie: Results): SupportAppScreen() {
         override fun getFragment() = MovieFragment.newInstance(movie)
     }
-
-//    class DetailsOldScreen(private val movie: Results, private val repository: Results): SupportAppScreen() {
-//        override fun getFragment() = RepositoryFragment.newInstance(movie, repository)
-//    }
 }
