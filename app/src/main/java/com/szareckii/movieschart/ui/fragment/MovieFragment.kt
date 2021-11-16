@@ -53,33 +53,13 @@ class MovieFragment : MvpAppCompatFragment(), MovieView, BackButtonListener {
         return _binding?.root
     }
 
-    override fun init() {
-//        _binding?.rvRepository?.layoutManager = LinearLayoutManager(requireContext())
-//        adapter = RepositoryRvAdapter(presenter.repositoryListPresenter)
-
-//        _binding?.rvRepository?.addItemDecoration(dividerItemDecoration)
-
-//        _binding?.rvRepository?.adapter = adapter
-    }
-
     override fun setOverview(text: String) {
-//        _binding?.loginUser?.text = text
-//        imageLoader.loadInto(movie., iv_image)
-//        _binding?.detailsImagePoster.loadImage()
         _binding?.overviewTextview?.text = text
 
     }
 
     override fun setBackdropPoster(url: String) {
-
-//        movie.poster_path?.let { view.loadImage(it) }
-//        _binding?.detailsImagePoster.loadImage()
-//        imageLoader.loadInto(url, iv_image)
         _binding?.detailsImagePoster?.let { imageLoader.loadInto(url, it) }
-    }
-
-    override fun updateUserReposList() {
-//        adapter?.notifyDataSetChanged()
     }
 
     override fun onDestroyView() {

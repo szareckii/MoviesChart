@@ -35,7 +35,7 @@ class MoviePresenter(private val movie: Results): MvpPresenter<MovieView>() {
 
     override fun onFirstViewAttach() {
         super.onFirstViewAttach()
-        viewState.init()
+//        viewState.init()
         movie.overview?.let { viewState.setOverview(it) }
 
         movie.backdrop_path?.let { viewState.setBackdropPoster(it) }
