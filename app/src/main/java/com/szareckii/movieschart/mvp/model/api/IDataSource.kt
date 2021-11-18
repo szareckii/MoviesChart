@@ -15,7 +15,4 @@ interface IDataSource {
         @Query("language") language: String
     ): Single<Movies>
 
-    @GET
-    fun getRepositories(@Url url: String): Single<List<Results>>
-
 }
